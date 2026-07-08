@@ -1,0 +1,13 @@
+[Unit]
+Description=Todo Reminder Background Daemon
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/path/to/todo_app
+ExecStart=/usr/bin/python3 /path/to/todo_app/reminder_daemon.py --interval 1800
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target
