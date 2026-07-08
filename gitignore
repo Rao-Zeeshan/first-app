@@ -1,4 +1,5 @@
 tasks.json
+reminder.log
 __pycache__/
 *.pyc
 .venv/
